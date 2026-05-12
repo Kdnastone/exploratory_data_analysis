@@ -97,7 +97,7 @@ try:
     st.divider()
 
     # ===== SCATTER PLOTS =====
-    st.header("🔍 Gráficos de Dispersión")
+    st.header("Gráficos de Dispersión")
     
     scatter_type = st.selectbox(
         "Selecciona un scatter plot:",
@@ -192,7 +192,7 @@ try:
     st.divider()
 
     # ===== MATRIZ DE CORRELACION =====
-    st.header("🔗 Matriz de Correlación")
+    st.header("Matriz de Correlación")
     numeric_cols = df.select_dtypes(include=[np.number]).columns
     correlation_matrix = df[numeric_cols].corr()
     
@@ -207,7 +207,7 @@ try:
     st.divider()
 
     # ===== INSIGHTS =====
-    st.header("💡 Insights Clave")
+    st.header("Insights Clave")
     
     col1, col2, col3 = st.columns(3)
     
@@ -235,7 +235,7 @@ try:
     st.divider()
 
     # ===== DATOS COMPLETOS =====
-    st.header("📋 Datos Completos")
+    st.header("Datos Completos")
     st.dataframe(df, use_container_width=True)
 
 except Exception as e:
